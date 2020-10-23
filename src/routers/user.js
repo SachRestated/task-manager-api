@@ -29,7 +29,7 @@ router.post('/users', async (req, res) => {
         welcome(user.email, user.name) 
         res.status(201).send({user, token})
     } catch (e) {
-        console.log(e);
+        // console.log(e);
         res.status(400).send(e)
     }
 
